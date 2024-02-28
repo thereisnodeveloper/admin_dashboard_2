@@ -69,17 +69,29 @@ img{
     width: 30px;
 }
 
+.filter{
+    filter: invert();
+}
+
 /* sidebar */
 
 .sidebar *{
     color: #ffff;
     font-size: 18px;
 }
+.sidebar img{
+    width: 1.3em;
+    margin-right: 3px;
+}
 
 .dashboard-img{
     font-weight: 700;
     font-size: 30px;
+}
 
+.sidebar li{
+    display: flex;
+    align-items: center;
 }
 
 
