@@ -35,6 +35,11 @@ body{
     gap:20px
 }
 
+.sidebar ul{
+    display:grid;
+    gap:5px
+}
+
 .header{
     background-color: #bc7474;
     grid-column: 2 / 3;
@@ -66,8 +71,15 @@ img{
 
 /* sidebar */
 
-.sidebar li{
+.sidebar *{
     color: #ffff;
+    font-size: 18px;
+}
+
+.dashboard-img{
+    font-weight: 700;
+    font-size: 30px;
+
 }
 
 
