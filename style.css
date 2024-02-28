@@ -4,6 +4,19 @@
     --gray1: rgba(225,232,240,255)
 }
 
+@font-face {
+    font-family: branda;
+    src: url(./Branda-yolq.woff);
+}
+
+
+/* top level */
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: 'UniqueRegular';
+}
+
 .container{
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -13,6 +26,7 @@
 .sidebar{
     background-color: var(--blue1);
     grid-row: 1 / 3;
+    font-family: branda;
 }
 
 .header{
@@ -23,4 +37,15 @@
 .content{
     background-color: var(--gray1);
     grid-area: 2 / 2 / 3 / 3;
+}
+
+li{
+    list-style: none;    
+}
+
+
+/* sidebar */
+
+.sidebar li{
+    color: #ffff;
 }
