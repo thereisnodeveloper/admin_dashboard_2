@@ -52,9 +52,10 @@ body{
     background-color: var(--gray1);
     grid-area: 2 / 2 / 3 / 3;
     display:grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: auto 1fr / 3fr 1fr;
     gap:15px;
     padding: 10px;
+    align-items: start;
 }
 
 
@@ -194,8 +195,8 @@ img{
 
 .projects{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 150px));
     gap:15px;
     padding: 20px
 }
@@ -203,7 +204,7 @@ img{
 .card{
     background-color: #fff;
     padding: 5px;
-    display:grid;   
+    display:grid;
 }
 .card .icons{
     justify-self:end;
